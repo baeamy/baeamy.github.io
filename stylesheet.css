@@ -1,0 +1,126 @@
+/* Apply CSS styles to at least one HTML tag */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the h1 title */
+h1 {
+    text-align: center; /* This centers the title */
+    font-size: 36px;
+    margin-top: 20px;
+    color: #c1ddd8;
+}
+
+/* Create a class, apply it to at least two elements, and style it */
+.album-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.album-cover {
+    width: 100%;
+    height: auto;
+    border: 3px solid #333;
+    margin-bottom: 10px;
+}
+
+/* Create an ID, apply it to an element, and style it */
+#album3, #album4 {
+    background-color: #c1ddd8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Create an ID, apply it to an element, and style it */
+#album2, #album6 {
+    background-color: #fff3c4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Create an ID, apply it to an element, and style it */
+#album1, #album5 {
+    background-color: #ede1db;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Use <div> to create at least two sections of content */
+.albums-section {
+    padding: 20px;
+}
+
+.footer-section {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Use grid to organize album section into 3 columns */
+.albums {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    justify-items: center; /* Ensure the album items are centered in their columns */
+}
+
+/* Ensure that the grid has 3 columns even on smaller screens */
+.albums > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Use <a> to link to another website and style hover effect */
+.github {
+    text-decoration: none;
+    color: #c1ddd8;
+}
+
+/* Change the color of <a> when you hover over it */
+.github:hover {
+    color: #0056b3;
+}
+
+/* Change at least two box model properties */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Include an image (something safe for work) */
+.album-cover {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+/* Add meta description for search engines */
+
+/* Make sure the album covers stay 3 per row */
+@media (max-width: 900px) {
+    .albums {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .albums {
+        grid-template-columns: repeat(3, 1fr); /* Keep 3 columns even for small screens */
+    }
+}
